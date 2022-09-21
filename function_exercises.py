@@ -11,7 +11,7 @@ def is_two(n):
     
     #we check to see if the argument is equal to 2 and return the boolean value
     return n == 2
-is_two(2)
+#is_two(2)
 
 
 # ## Q2
@@ -24,7 +24,7 @@ def is_vowel(n):
     
     # check to see if the argument is equal any vowel characters and return boolean value
     return n == 'a' or n == 'e' or n == 'i' or n == 'o' or n == 'u'
-is_vowel('a')
+#is_vowel('a')
 
 
 # ## Q3
@@ -37,7 +37,7 @@ def is_consonant(n):
     
     # check to see if the argument is NOT equal to ALL vowel characters and return a boolean value
      return n != 'a' and n != 'e' and n != 'i' and n != 'o' and n != 'u'
-is_consonant('c')
+#is_consonant('c')
 
 
 # ## Q4
@@ -66,7 +66,7 @@ def cap_start_con():
         n = n.capitalize()
 
     return n
-cap_start_con()
+#cap_start_con()
 
 
 # ## Q5
@@ -93,7 +93,7 @@ def calculate_tip():
     # return string with rounded tip amount
     return print(f'Tip calculated: ${tip}')
 
-calculate_tip()
+#calculate_tip()
 
 
 # ## Q6
@@ -120,7 +120,7 @@ def apply_discount():
     return print(f'Discounted Price: ${discountprice}')
 
 
-apply_discount()
+#apply_discount()
 
 
 # ## Q7
@@ -139,7 +139,7 @@ def handle_commas():
     
     # returns n casted as an int, returns error if user input is not a number
     return int(n)
-handle_commas()
+#handle_commas()
 
 
 # ## Q8
@@ -165,7 +165,7 @@ def get_letter_grade():
         return 'Grade D'
     elif n in range(0,60):
         return 'Grade F'
-get_letter_grade()
+#get_letter_grade()
 
 
 # ## Q9
@@ -196,7 +196,7 @@ def remove_vowels():
             
      #return newly built string result       
     return result
-remove_vowels()
+#remove_vowels()
 
 
 # ## Q10
@@ -205,10 +205,10 @@ remove_vowels()
 
 
 import re #Regular expression operations
-def normalize_name():
+def normalize_name(n):
     
     # user input as a string n
-    n = input('Enter a string with valid python identifiers: ')
+    #n = input('Enter a string with valid python identifiers: ')
     
     # replaces spacese with underscores
     n = n.replace(' ','_')
@@ -222,7 +222,7 @@ def normalize_name():
     #removes non-alphanumeric character from string
     n = re.sub(r'\W+', '', n) #used import instead of a more intensive workaround
     return n
-normalize_name()
+#normalize_name()
 
 
 # ## Q11
@@ -251,5 +251,5 @@ def cumulate_sum(nlist):
     # returns new list   
     return cum_list
     
-cumulate_sum([1,2,3,4,5]) # or just import numpy and use numpy.cumsum()
+#cumulate_sum([1,2,3,4,5]) # or just import numpy and use numpy.cumsum()
 
